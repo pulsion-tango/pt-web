@@ -2193,6 +2193,24 @@ document.querySelectorAll('a[href^="#"]').forEach(function(link) {
 });
 </script>
 
+
+<!-- =========================================
+     VIDÉOS — RETOUR AU POSTER EN FIN DE VIDÉO
+     ========================================= -->
+
+<script>
+document.querySelectorAll('.site-video').forEach(function(video) {
+
+    video.addEventListener('ended', function() {
+
+        this.currentTime = 0;
+
+    });
+
+});
+</script>
+
+
 <script>
 document.querySelectorAll('.video-context').forEach(function(videoContext) {
 
